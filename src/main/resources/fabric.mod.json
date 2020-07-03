@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "creativeupgrade",
+  "version": "${version}",
+
+  "name": "Creative Upgrade",
+  "description": "A neat and improved creative menu!",
+  "authors": [
+    "FoundationGames"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/creativeupgrade/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.foundationgames.creativeupgrade.CreativeUpgrade"
+    ],
+    "client": [
+      "io.github.foundationgames.creativeupgrade.CreativeUpgradeClient"
+    ]
+  },
+  "mixins": [
+    "creativeupgrade.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
